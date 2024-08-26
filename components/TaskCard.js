@@ -15,10 +15,8 @@ export function createTaskCard(task) {
         .attr('data-task-id', task.id)
         .on('click', handleDeleteTask);
 
-    // Set background color based on due date
     setTaskCardColor(taskCard, task);
 
-    // Append card elements
     cardBody.append(cardDescription, cardDueDate, cardDeleteBtn);
     taskCard.append(cardHeader, cardBody);
 

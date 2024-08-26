@@ -1,11 +1,9 @@
 import { getTasks, saveTasks } from './storage.js';
 
-// Generate unique task IDs
 export function generateTaskId(nextId) {
     return nextId++;
 }
 
-// Set task card color based on due date
 export function setTaskCardColor(taskCard, task) {
     if (!task.dueDate || task.status === 'done') return;
 
@@ -19,7 +17,6 @@ export function setTaskCardColor(taskCard, task) {
     }
 }
 
-// Initialize droppable functionality for task columns
 export function initializeDroppable() {
     $('.lane').droppable({
         accept: '.draggable',

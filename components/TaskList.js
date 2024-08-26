@@ -19,7 +19,6 @@ export function renderTaskList() {
         }
     });
 
-    // Make task cards draggable
     initializeDraggable();
 }
 
